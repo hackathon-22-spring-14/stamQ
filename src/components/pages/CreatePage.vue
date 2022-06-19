@@ -251,21 +251,6 @@ export default defineComponent({
         ctx.scale(1 / ratio, lines.length)
       }
     },
-    // TODO: pagesに移動させる
-    createStamp() {
-      const canvas = document.getElementById('canvas') as HTMLCanvasElement
-      const imageUrl = canvas.toDataURL('image/png')
-
-      const base64ImageUrl = imageUrl.split(',')[1]
-      const params = new FormData()
-      params.append('name', this.title)
-      params.append('image', base64ImageUrl)
-      axios.post('/api/stamps', params, {
-        headers: {
-          'content-type': 'multipart/form-data',
-        },
-      })
-    },
   },
 })
 </script>
@@ -289,12 +274,6 @@ html {
   z-index: 5;
   box-shadow: var(--standardShadow);
 }
-.upload {
-  display: flex;
-  width: 272px;
-  justify-content: center;
-  margin: 5px;
-}
 .stamp-title {
   border-bottom: 1px solid black;
   margin: 3px;
@@ -310,9 +289,6 @@ html {
   align-items: center;
   box-shadow: var(--buttonShadow);
   transition: var(--buttonTransition);
-}
-.upload-section:hover {
-  box-shadow: var(--buttonShadowHover);
 }
 .preview {
   background-color: whitesmoke;
