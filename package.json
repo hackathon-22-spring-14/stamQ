@@ -12,7 +12,6 @@
     "format": "prettier -w src/**/*.{ts,vue} && prettier -w src/**/*.{ts,vue}",
     "fix": "yarn format && yarn lint",
     "gen-api": "node ./scripts/generate-apis.js",
-    "homepage": "./",
     "prepare": "husky install"
   },
   "dependencies": {

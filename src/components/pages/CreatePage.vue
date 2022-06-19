@@ -128,9 +128,9 @@ export default defineComponent({
       title: '',
       imgId: 'img_null',
       imgInfos: [
-        { src: '/null.png', id: 'img_null' },
-        { src: '/shuchu.png', id: 'img_shuchu' },
-        { src: '/red_shuchu.png', id: 'img_red_shuchu' },
+        { src: '../../assets/null.png', id: 'img_null' },
+        { src: '../../assets/shuchu.png', id: 'img_shuchu' },
+        { src: '../../assets/red_shuchu.png', id: 'img_red_shuchu' },
       ],
       effInfos: [
         // { src: '../../../effect/a.ts', id: 'eff_smalltext', name: '小さめの文字'},
