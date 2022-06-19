@@ -16,3 +16,7 @@ export default defineConfig({
   base: '/',
   plugins: [vue()],
 })
+
+module.exports = {
+  outputDir: 'docs'
+}
