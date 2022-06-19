@@ -5,12 +5,14 @@
   "scripts": {
     "dev": "tsc --noEmit && vite --mode=development",
     "build": "tsc --noEmit && vite build --mode=production",
+    "deploy": "gh-pages -d docs"  ,
     "serve": "vite preview",
     "preview": "vite preview",
     "lint": "eslint --fix src/**/*.{ts,vue} && eslint --fix src/**/*.{ts,vue}",
     "format": "prettier -w src/**/*.{ts,vue} && prettier -w src/**/*.{ts,vue}",
     "fix": "yarn format && yarn lint",
     "gen-api": "node ./scripts/generate-apis.js",
+    "homepage": "./",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -28,6 +30,7 @@
     "autoprefixer": "^10.4.7",
     "eslint": "^8.17.0",
     "eslint-plugin-vue": "^9.1.1",
+    "gh-pages": "^4.0.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.1",
     "prettier": "^2.6.2",
