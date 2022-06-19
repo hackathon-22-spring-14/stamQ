@@ -3,8 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite --port 8080",
-    "build": "vue-tsc --noEmit && vite build",
+    "dev": "tsc --noEmit && vite --mode=development",
+    "build": "tsc --noEmit && vite build --mode=production",
+    "serve": "vite preview",
     "preview": "vite preview",
     "lint": "eslint --fix src/**/*.{ts,vue} && eslint --fix src/**/*.{ts,vue}",
     "format": "prettier -w src/**/*.{ts,vue} && prettier -w src/**/*.{ts,vue}",
