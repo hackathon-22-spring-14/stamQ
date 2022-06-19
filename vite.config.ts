@@ -11,7 +11,3 @@ export default defineConfig({
  },
  plugins: [vue()]
 })
-
-module.exports = {
-  outputDir: 'docs'
-}

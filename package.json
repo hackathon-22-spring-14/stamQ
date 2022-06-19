@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "tsc --noEmit && vite --mode=development",
     "build": "tsc --noEmit && vite build --mode=production",
-    "deploy": "gh-pages -d docs"  ,
+    "deploy": "gh-pages -d docs",
     "serve": "vite preview",
     "preview": "vite preview",
     "lint": "eslint --fix src/**/*.{ts,vue} && eslint --fix src/**/*.{ts,vue}",
@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "@openapitools/openapi-generator-cli": "^2.5.1",
+    "@types/node": "^18.0.0",
     "@typescript-eslint/eslint-plugin": "^5.27.1",
     "@typescript-eslint/parser": "^5.27.1",
     "@vitejs/plugin-vue": "^2.3.3",
