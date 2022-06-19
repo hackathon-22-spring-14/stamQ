@@ -110,11 +110,9 @@
 
 <script lang="ts">
 import { defineComponent, watch } from 'vue'
-import { api } from '../../utils/api'
 import CanvasPreview from '../atomics/CanvasPreview.vue'
 import InputFile from '../atomics/InputFile.vue'
 import PulldownSelect from '../atomics/PulldownSelect.vue'
-import axios from 'axios'
 
 export default defineComponent({
   components: {
